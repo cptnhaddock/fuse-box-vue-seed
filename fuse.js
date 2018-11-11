@@ -50,12 +50,17 @@ Sparky.task("config", () => {
                 uglify: true,
                 treeshake: true
             }),
-        ]
+        ],
+        alias: {
+            'vue-router': '~/common/libs/vue-router.js',
+            'vuetify': '~/common/libs/vuetify.js',
+            'vue$': '~/common/libs/vue.js'
+        }
     });
 
     if(!isProduction){
         fuse.dev({
-            open: true,
+            open: false,
             port: 8080
         });
     }
@@ -67,7 +72,7 @@ Sparky.task("config", () => {
         .instructions("> [index.js]");
 
     if(!isProduction){
-        app.watch().hmr();
+        app.watch();//.hmr();
     }
 })
 

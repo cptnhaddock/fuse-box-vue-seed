@@ -24,8 +24,6 @@
   "homepage": "https://github.com/fuse-box/fuse-box-vue-seed#readme",
   "dependencies": {
     "prismjs": "^1.15.0",
-    "vue": "^2.5.16",
-    "vue-router": "^3.0.1",
     "vuetify": "^1.0.19"
   },
   "devDependencies": {
